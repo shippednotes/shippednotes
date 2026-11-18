@@ -1,0 +1,31 @@
+# Built and tested against Zola v0.21.0 (pinned in the workflow and serve.sh).
+# The GitHub Action overrides base_url at build time.
+base_url = "http://127.0.0.1:1111"
+title = "Shipped Notes"
+description = "Notes from building things: data, AI and software engineering."
+default_language = "en"
+
+compile_sass = false
+build_search_index = false
+
+generate_feeds = true
+feed_filenames = ["atom.xml"]
+
+taxonomies = [
+  { name = "tags", feed = true },
+]
+
+[markdown]
+highlight_code = true
+highlight_theme = "base16-ocean-dark"
+external_links_target_blank = true
+external_links_no_referrer = true
+smart_punctuation = true
+
+[extra]
+# Shown in the footer. Edit names / links here.
+authors = [
+  { name = "Çağrı", url = "https://github.com/tevfikcagridural" },
+  { name = "Göker", url = "https://github.com/gokertanrisever" },
+]
+repo = "https://github.com/tevfikcagridural/shippedNotes"

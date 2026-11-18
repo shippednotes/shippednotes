@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% import "macros.html" as m %}
+
+{% block content %}
+<section class="intro">
+  {{ section.content | safe }}
+</section>
+
+{% set blog = get_section(path="blog/_index.md") %}
+<h2><span class="prompt">$</span> ls -t blog | head</h2>
+{% set recent = blog.pages | slice(end=10) %}
+{{ m::post_list(pages=recent) }}
+{% if blog.pages | length > 10 %}
+<p><a href="{{ blog.permalink | safe }}">all posts →</a></p>
+{% endif %}
+{% endblock content %}
