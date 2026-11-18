@@ -2,7 +2,7 @@
 title = "Hello, world"
 date = 2026-11-18
 description = "Why we started Shipped Notes."
-authors = ["Çağrı", "FRIEND"]
+authors = ["Çağrı"]
 
 [taxonomies]
 tags = ["meta"]

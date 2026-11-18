@@ -20,13 +20,7 @@ Co-authored blog. Built with [Zola](https://www.getzola.org) v0.21.0, with a min
    Body in markdown.
    ```
 
-2. Preview: `./serve.sh` (needs Docker), then open http://localhost:1111
+2. Preview: `./serve.sh` (needs Docker), then open <http://localhost:1111>
 3. Open a PR, get the other person's review, then merge to `main`. The site deploys automatically.
 
 Add `draft = true` to the front matter to keep a post out of the build.
-
-## One-time setup
-
-- Replace `YOUR_GITHUB` / `FRIEND` in `config.toml` and `content/about.md`.
-- In the GitHub repo, go to **Settings → Pages → Source** and pick **GitHub Actions**.
-- Invite your co-author under **Settings → Collaborators**.
