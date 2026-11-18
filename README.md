@@ -11,7 +11,7 @@ Co-authored blog. Built with [Zola](https://www.getzola.org) v0.21.0, with a min
    title = "My post"
    date = 2026-11-18
    description = "One line summary"
-   authors = ["Çağrı"]
+   authors = ["Çağrı & Göker"]
 
    [taxonomies]
    tags = ["ai"]
